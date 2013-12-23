@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Update>
+	<SMBStats>
+		<Stable>
+			<Version>1.8.0.0</Version>
+			<URL>http://code.google.com/p/smbstats/downloads/detail?name=SMBStats-1.8.0.0.zip</URL>
+			<Date>2011-04-05</Date>
+			<Summary>http://smbstats.googlecode.com/svn/VersionHistory.txt</Summary>
+		</Stable>
+	</SMBStats>
+</Update>

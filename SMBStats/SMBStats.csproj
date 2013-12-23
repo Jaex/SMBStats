@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B49729B8-9966-4C11-A2CB-2BD14E353CB5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMBStats</RootNamespace>
+    <AssemblyName>SMBStats</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>smb.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="INIFileParser, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\INIFileParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Net35, Version=4.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Newtonsoft.Json.Net35.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectListView, Version=2.4.1.35763, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LeaderboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LeaderboardForm.Designer.cs">
+      <DependentUpon>LeaderboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UnpackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UnpackForm.Designer.cs">
+      <DependentUpon>UnpackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperMethods.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Forms\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LeaderboardForm.resx">
+      <DependentUpon>LeaderboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UnpackForm.resx">
+      <DependentUpon>UnpackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HelpersLibrary\HelpersLibrary.csproj">
+      <Project>{5BE8FD15-AD68-4367-8B55-08AD4475ECB2}</Project>
+      <Name>HelpersLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SteamLibrary\SteamLibrary.csproj">
+      <Project>{DEDD377C-730E-42CF-97E7-ED2F07905779}</Project>
+      <Name>SteamLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SuperMeatBoyLibrary\SuperMeatBoyLibrary.csproj">
+      <Project>{1F173348-AAE2-4633-A556-EFC985E282BF}</Project>
+      <Name>SuperMeatBoyLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UpdateCheckerLibrary\UpdateCheckerLibrary.csproj">
+      <Project>{091475E0-BF06-4D9D-9A4D-7E71BE08FB96}</Project>
+      <Name>UpdateCheckerLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Library\INIFileParser.dll" />
+    <Content Include="Library\Newtonsoft.Json.Net35.dll" />
+    <Content Include="Library\ObjectListView.dll" />
+    <None Include="Resources\completed.png" />
+    <None Include="Resources\gradea.png" />
+    <None Include="Resources\bandage.png" />
+    <None Include="Resources\bandage_black.png" />
+    <None Include="Resources\warp_black.png" />
+    <None Include="Resources\warp.png" />
+    <None Include="Resources\ch7.png" />
+    <None Include="Resources\ch1.png" />
+    <None Include="Resources\ch2.png" />
+    <None Include="Resources\ch3.png" />
+    <None Include="Resources\ch4.png" />
+    <None Include="Resources\ch5.png" />
+    <None Include="Resources\ch6.png" />
+    <None Include="Resources\char_runman.png" />
+    <None Include="Resources\char_steve.png" />
+    <None Include="Resources\char_video.png" />
+    <None Include="Resources\char_viridian.png" />
+    <None Include="Resources\char_bandage.png" />
+    <None Include="Resources\char_flywrench.png" />
+    <None Include="Resources\char_headcrab.png" />
+    <None Include="Resources\char_jill.png" />
+    <None Include="Resources\char_josef.png" />
+    <None Include="Resources\char_kid.png" />
+    <None Include="Resources\char_meatboy.png" />
+    <None Include="Resources\char_naija.png" />
+    <None Include="Resources\char_ninja.png" />
+    <None Include="Resources\char_ogmo.png" />
+    <None Include="Resources\char_8bit.png" />
+    <None Include="Resources\char_4bit.png" />
+    <None Include="Resources\char_4color.png" />
+    <None Include="Resources\char_unknown.png" />
+    <None Include="Resources\char_brownie.png" />
+    <None Include="Resources\char_gooball.png" />
+    <None Include="Resources\char_tofu.png" />
+    <None Include="Resources\potatoSmall.png" />
+    <None Include="Resources\completed_black.png" />
+    <None Include="Resources\char_hominid.png" />
+    <None Include="Resources\char_potato.png" />
+    <Content Include="smb.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

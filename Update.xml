@@ -2,10 +2,9 @@
 <Update>
 	<SMBStats>
 		<Stable>
-			<Version>1.8.0.0</Version>
-			<URL>http://code.google.com/p/smbstats/downloads/detail?name=SMBStats-1.8.0.0.zip</URL>
-			<Date>2011-04-05</Date>
-			<Summary>http://smbstats.googlecode.com/svn/VersionHistory.txt</Summary>
+			<Version>1.9.0</Version>
+			<URL></URL>
+			<Date>2014-05-07</Date>
 		</Stable>
 	</SMBStats>
 </Update>

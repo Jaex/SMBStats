@@ -43,7 +43,7 @@ namespace SMBStats
 
         public static Settings Settings { get; private set; }
 
-        public const string UpdateURL = "http://smbstats.googlecode.com/svn/Update.xml";
+        public const string UpdateURL = "https://raw.githubusercontent.com/Jaex/SMBStats/master/Update.xml";
 
         [STAThread]
         private static void Main()

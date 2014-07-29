@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Jaex")]
 [assembly: AssemblyProduct("Super Meat Boy Stats")]
-[assembly: AssemblyCopyright("Copyright © Jaex")]
+[assembly: AssemblyCopyright("Copyright (C) Jaex")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

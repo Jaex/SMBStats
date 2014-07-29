@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("HelpersLibrary")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Jaex")]
 [assembly: AssemblyProduct("HelpersLibrary")]
-[assembly: AssemblyCopyright("Copyright © Juzz")]
+[assembly: AssemblyCopyright("Copyright (C) Jaex")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

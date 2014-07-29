@@ -1,13 +1,12 @@
-#region License Information (GNU GPL v3)
+﻿#region License Information (GPL v3)
 
 /*
-    Super Meat Boy Stats
     Copyright (C) Jaex
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+    This program is free software; you can redistribute it and/or
+    modify it under the terms of the GNU General Public License
+    as published by the Free Software Foundation; either version 2
+    of the License, or (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -15,14 +14,17 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+    Optionally you can also view the license at <http://www.gnu.org/licenses/>.
 */
 
-#endregion License Information (GNU GPL v3)
+#endregion License Information (GPL v3)
 
+using HelpersLibrary;
 using System.Collections.Generic;
 using System.Linq;
-using HelpersLibrary;
 
 namespace SuperMeatBoyLibrary
 {
@@ -180,12 +182,12 @@ namespace SuperMeatBoyLibrary
             DarkLevelsCompletedText = string.Format("{0} / {1}", DarkCompleted, MaxLevelCount);
             WarpLevelsCompletedText = MaxWarpCount > 0 ? string.Format("{0} / {1}", WarpCompleted, MaxWarpCount) : string.Empty;
             BandagesText = MaxBandagesCount > 0 ? string.Format("{0} / {1}", Bandages, MaxBandagesCount) : string.Empty;
-            TotalLevelTimesText =  string.Format("{0:0.000} / {1:0.000}", TotalTime, TotalCompletedParTime);
-            LightLevelTimesText =  string.Format("{0:0.000} / {1:0.000}", TotalLightTime, TotalLightCompletedParTime);
-            DarkLevelTimesText =  string.Format("{0:0.000} / {1:0.000}", TotalDarkTime, TotalDarkCompletedParTime);
+            TotalLevelTimesText = string.Format("{0:0.000} / {1:0.000}", TotalTime, TotalCompletedParTime);
+            LightLevelTimesText = string.Format("{0:0.000} / {1:0.000}", TotalLightTime, TotalLightCompletedParTime);
+            DarkLevelTimesText = string.Format("{0:0.000} / {1:0.000}", TotalDarkTime, TotalDarkCompletedParTime);
             TotalLevelsGradeAText = string.Format("{0} / {1}", TotalLevelsGradeA, MaxLevelCount * 2);
-            TotalLightGradeAText =  string.Format("{0} / {1}", TotalLightGradeA, MaxLevelCount);
-            TotalDarkGradeAText =  string.Format("{0} / {1}", TotalDarkGradeA, MaxLevelCount);
+            TotalLightGradeAText = string.Format("{0} / {1}", TotalLightGradeA, MaxLevelCount);
+            TotalDarkGradeAText = string.Format("{0} / {1}", TotalDarkGradeA, MaxLevelCount);
         }
 
         private List<SMBLevel> GetLevels(SMBManager smb, LevelType levelType)

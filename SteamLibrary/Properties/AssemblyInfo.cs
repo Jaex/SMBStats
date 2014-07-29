@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("SteamLibrary")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Jaex")]
 [assembly: AssemblyProduct("SteamLibrary")]
-[assembly: AssemblyCopyright("Copyright © Juzz")]
+[assembly: AssemblyCopyright("Copyright (C) Jaex")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

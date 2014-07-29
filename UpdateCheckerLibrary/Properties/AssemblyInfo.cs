@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("UpdateCheckerLibrary")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Jaex")]
 [assembly: AssemblyProduct("UpdateCheckerLibrary")]
-[assembly: AssemblyCopyright("Copyright © Juzz")]
+[assembly: AssemblyCopyright("Copyright (C) Jaex")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
